@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: 
+    Red: 
+    Black: 
+    Blue: 
+    Yellow: 
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+
+    */
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0%;
+      padding: 0%;
+      height: 100vh;
+      }
+      .item{
+        background-color: #F0F1EC;
+      }
+    
+    .container{
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      height: 748px;
+      width: 748px;
+      
+      gap: 9px;
+      background-color: #000;
+    }
+    .right{
+      grid-column: span 3;
+    }
+    .left{
+     grid-column: span 1;
+     grid-row: span 2;
+    }
+    .ndright{
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .red{
+      background-color: #E72F24;
+    }
+    .black{
+      background-color:#232629;
+     
+    }
+    .yellow{
+      background-color:#F9D01E ;
+     
+    }
+    .darkblue{
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="item red box"></div>
+    <div class="item right white"></div>
+    <div class="item left white"></div>
+    <div class="item ndright white"></div>
+    <div class="item darkblue"></div>
+    <div class="item short white"></div>
+    <div class="item shortest white"></div>
+    <div class="item yellow"></div>
+    <div class="item black"></div>
+  </div>
+</body>
+
+</html>
